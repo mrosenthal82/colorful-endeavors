@@ -80,12 +80,8 @@ function colorsThree() {
   for (let q=0; q<=255; q++){
     x=10;
     y+=size;
-    // if (q>=0 && q<=50){
-      blue=q*1;
-      red=255-q*1;
-    // } else {
-    //   blue-=1;
-    // }
+    blue=q*1;
+    red=255-q*1;
     green=0;
 
     for (let i = 0; i<255; i++){
@@ -95,12 +91,6 @@ function colorsThree() {
       green+=1;
       x+=size;
     }
-    // for (let j = 0; j<=50; j++){
-    //   ctx.fillStyle=`rgb(${red},${green},${blue})`;
-    //   ctx.fillRect(x,y,size,size);
-    //   red+=1;
-    //   green-=1;
-    //   x+=size;
-    // }
+
   }
 }
