@@ -94,3 +94,30 @@ function colorsThree() {
 
   }
 }
+
+
+function colorsFour() {
+  let ctx = document.getElementById("colors4").getContext("2d");
+  ctx.clearRect(0,0,1000,500);
+
+  let a = Number(prompt("Opacity:"));
+  let size = 2;
+  let y = 10-size;
+
+  for (let q=0; q<=255; q++){
+    x=10;
+    y+=size;
+    blue=q*1;
+    red=255-q*1;
+    green=0;
+
+    for (let i = 0; i<255; i++){
+      ctx.fillStyle=`rgba(${red},${green},${blue},${a})`;
+      ctx.fillRect(x,y,size,size);
+      red-=1;
+      green+=1;
+      x+=size;
+    }
+
+  }
+}
